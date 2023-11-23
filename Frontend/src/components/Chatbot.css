@@ -1,0 +1,148 @@
+/* Chatbox Container */
+.chatbox-container {
+  position: fixed;
+  bottom: 0px;
+  right: 20px;
+  max-width: 400px;
+  /* width: 100%; */
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Opened Chatbox */
+.chatbox-container.open {
+  transform: translateX(0);
+}
+
+/* Minimized Chatbox */
+.chatbox-container.minimized {
+  transform: translateX(100%);
+}
+
+/* Chatbox Content */
+.chatbox-content {
+  background-image: url("/public/astronaut_4k.jpg");
+  background-color: #f4efef;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Chatbox Header */
+.chatbox-header {
+  background-color: #ebb8e1;
+  color: rgb(19, 19, 133);
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* User Info */
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-avatar {
+  border-radius: 10%;
+  margin-right: 10px;
+}
+
+/* Close Button */
+.close-button {
+  max-width: 4px;
+  background: greenyellow;
+  border: none;
+  color: #de1111;
+  cursor: pointer;
+}
+
+/* Hover effect for close button */
+.close-button:hover {
+  background-color: #a06b45;
+}
+
+/* Minimize and Maximize Buttons */
+.minimize-button,
+.maximize-button {
+  background: none;
+  border: none;
+  color: #f7f5f5;
+  cursor: pointer;
+}
+
+/* Hover effect for minimize and maximize buttons */
+.minimize-button:hover,
+.maximize-button:hover {
+  background-color: #45a049;
+}
+
+/* Chatbox Thread */
+.chatbox-thread {
+  padding: 10px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+/* Message Styles */
+.message {
+  margin-bottom: 10px;
+}
+
+.user-message {
+  text-align: right;
+}
+
+.bot-message {
+  text-align: left;
+}
+
+.message-content {
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #f8f8a4;
+}
+
+/* Message Time */
+.message-time {
+  font-size: 0.8em;
+  color: #716d6d;
+}
+
+/* Chatbox Input Form */
+.chatbox-input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+/* Textarea Styles */
+textarea {
+  width: 80%;
+  padding: 8px;
+  border: 1px solid #1a1919;
+  border-radius: 5px;
+  resize: none;
+}
+
+/* Send Button */
+.send-button {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 6px;
+  cursor: pointer;
+}
+
+/* Hover effect for send button */
+.send-button:hover {
+  background-color: #45a049;
+}
+
+/* Hover effect for open button */
+.open-button:hover {
+  background-color: #45a049;
+}
